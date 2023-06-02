@@ -1,0 +1,306 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Cambria', serif;
+}
+
+body {
+    background: #ffffff;
+    font-size: 18px;
+}
+
+nav {
+    width: 100%;
+    height: 13%;
+    margin: auto;
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-left: 8%;
+	padding-right: 8%;
+    position: fixed;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+
+nav ul li a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+nav ul li a:hover{
+	color: #f90000;
+	transition: .5s;
+}
+
+.button {
+	background-color:#f90000;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+	font-size: 22px;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+}
+
+.button:hover {
+	transform: scale(1.1);
+}
+
+/* form */
+.form{
+	width: 100%;
+	padding-top: 275px;
+	padding-bottom: 110px;
+  	background-color: #FFE5CA;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+    height: 100%;
+}
+
+form {
+    padding: 25px;
+    background: #FFF3E2;
+    max-width: 800px;
+	justify-content: center;
+    width: 100%;
+	align-items: center;
+}
+  
+form h1 {
+    font-size: 55px;
+    text-align: center;
+    margin: 0px 0 30px;
+	color: #B46060;
+}
+  
+form .fullname{
+    position: relative;
+    margin-bottom: 20px;
+	font-size: 25px;
+}
+
+form .email{
+    position: relative;
+    margin-bottom: 20px;
+	font-size: 25px;
+}
+
+form .phone{
+    position: relative;
+    margin-bottom: 20px;
+	font-size: 25px;
+}
+
+form .email{
+    position: relative;
+    margin-bottom: 20px;
+	font-size: 25px;
+}
+
+form .preferences{
+    position: relative;
+    margin-bottom: 20px;
+	font-size: 25px;
+}
+
+form select {
+    height: 65px;
+    padding: 12px;
+    width: 100%;
+    font-size: 20px;
+    background: #fff;
+    border: 1px solid #3b3a3a;
+}
+
+form input{
+    height: 65px;
+    padding: 12px;
+    width: 100%;
+    font-size: 20px;
+    background: #fff;
+    border: 1px solid #3b3a3a;
+}
+
+.agreement {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    display: flex;
+    column-gap: 8px;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.checkbox input {
+    width: 20px;
+    height: 20px;
+    accent-color:#FA9884;
+	color: #fff;
+}
+
+.agree label {
+    font-size: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#submitbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: #FA9884;
+    border: none;
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+	font-weight: bold;
+	height: 50px;
+}
+  
+#submitbutton:hover {
+   opacity: 80%;
+}
+
+/* footer */
+footer {
+	height: 250px;
+	width: 100%;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	background: #FA9884;
+	display: flex;
+	flex-direction: column;
+}
+
+.socmed {
+	display: flex;
+}
+
+footer h2{
+	color: white;
+}
+
+footer p{
+	font-size: 21px;
+	color: white;
+}
+
+.socmed a {
+	height: 50px;
+	width: 50px;
+	margin: 25px 10px;
+	font-size: 20px;
+	display: flex;
+	background-color:  #E74646;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	color: white;
+	text-decoration: none;
+}
+
+.socmed a:hover {
+	transform: scale(1.1);
+}
+
+.copyright {
+	color: rgb(255, 255, 255);
+	bottom: 35px;
+	font-size: 18px; 
+}
+
+/* mobile phone */
+@media screen and (max-width: 768px) {
+	nav {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	  
+	nav ul li {
+		padding: 5px 9px;
+	}
+  
+	nav ul li a{
+		font-size: 18px;
+	}
+  
+	form h1 {
+		font-size: 35px;
+	}
+	  
+	.form {
+		padding-top: 175px;
+		padding-bottom: 50px;
+     	padding-left: 50px;
+		padding-right: 50px;
+	}
+	  
+	form input {
+		height: 50px;
+		font-size: 16px;
+	}
+  
+	form select {
+		height: 50px;
+		font-size: 16px;
+	}
+	  
+	.button {
+		padding: 8px 20px;
+		font-size: 18px;
+	} 
+  
+	#submitbutton {
+		font-size: 20px;
+		height: 40px;
+	}
+	  
+	footer {
+		height: auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+  
+	.socmed a {
+		height: 40px;
+		width: 40px;
+		margin: 10px;
+		font-size: 18px;
+	}
+	  
+	footer h2 {
+		font-size: 24px;
+	}
+	  
+	footer p {
+		font-size: 18px;
+	}
+  
+	.copyright {
+		  font-size: 14px;
+	}
+}
+  

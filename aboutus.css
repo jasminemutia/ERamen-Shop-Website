@@ -1,0 +1,355 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Cambria', serif;
+}
+
+body {
+    background: #ffffff;
+    font-size: 18px;
+}
+
+nav {
+    width: 100%;
+    height: 13%;
+    margin: auto;
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-left: 8%;
+	padding-right: 8%;
+    position: fixed;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+
+nav ul li a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+nav ul li a:hover{
+	color: #f90000;
+	transition: .5s;
+}
+
+.button {
+	background-color:#f90000;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+	font-size: 22px;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+}
+
+.button:hover {
+	transform: scale(1.1);
+}
+
+
+/* about us */
+.aboutus{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+	background-color: #FFF3E2;
+	margin-top: 50px;
+}
+
+.aboutus .img_aboutus img{
+    width: 600px;
+	border-radius: 10px;
+}
+
+.aboutus .text-aboutus h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+	color: #B46060;
+}
+
+.aboutus .text-aboutus p{
+    width: 650px;
+    text-align: justify;
+    line-height: 23px;
+    margin-bottom: 30px;
+	color: #805F4C;
+	font-size: 27px;
+}
+
+.button1{
+	background-color:#f90000;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+	font-size: 25px;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+}
+
+.button1:hover{
+	opacity: 80%;
+}
+
+/* vision */
+.ourvission {
+	background: #FFE5CA;
+	width: 100%;
+	padding: 100px 0px;
+}
+
+.title1 h2 {
+	color: #B46060;
+	font-size: 50px;
+	width: 1130px;
+	margin: 5px auto;
+	text-align: center;
+}
+
+.box1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+
+.card {
+	height: 310px;
+	width: 670px;
+	padding: 20px 35px;
+	background: #FFF3E2;
+	opacity: 95%;
+	border-radius: 20px;
+	margin-top: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+.text1 p {
+	color: #805F4C;
+	font-size: 27px;
+	margin-bottom: 20px;
+	text-align: justify;
+	line-height: 27px;
+}
+
+/* mission */
+.ourmission {
+	background: #FFF3E2;
+	width: 100%;
+	padding: 100px 0px;
+}
+
+.title2 h2 {
+	color: #B46060;
+	font-size: 50px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+.box2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+
+.card2 {
+	height: 380px;
+	width: 500px;
+	padding: 20px 35px;
+	background: #FFE5CA;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+h3 {
+	color: #B46060;
+	font-size: 30px;
+	margin-top: 10%;
+	margin-bottom: 15px;
+}
+
+.text2 p {
+	color:  #805F4C;
+	font-size: 27px;
+	line-height: 27px;
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+/* footer */
+footer {
+	height: 250px;
+	width: 100%;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	background: #FA9884;
+	display: flex;
+	flex-direction: column;
+}
+
+.socmed {
+	display: flex;
+}
+
+footer h2{
+	color: white;
+}
+
+footer p{
+	font-size: 21px;
+	color: white;
+}
+
+.socmed a {
+	height: 50px;
+	width: 50px;
+	margin: 25px 10px;
+	font-size: 20px;
+	display: flex;
+	background-color:  #E74646;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	color: white;
+	text-decoration: none;
+}
+
+.socmed a:hover {
+	transform: scale(1.1);
+}
+
+.copyright {
+	color: rgb(255, 255, 255);
+	bottom: 35px;
+	font-size: 18px; 
+}
+
+@media only screen and (max-width: 768px) {
+	nav {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+      
+    nav ul li {
+        padding: 5px 9px;
+    }
+  
+    nav ul li a{
+        font-size: 18px;
+    }
+
+	.button {
+		padding: 8px 20px;
+		font-size: 18px;
+	} 
+
+	.aboutus {
+		flex-direction: column;
+		height: auto;
+		padding: 50px;
+		text-align: center;
+	}
+
+	.aboutus .img_aboutus img {
+		width: 100%;
+		max-width: 400px;
+		margin-bottom: 30px;
+		margin-top: 40px;
+	}
+
+	.aboutus .text-aboutus h1 {
+		font-size: 35px;
+	}
+
+	.aboutus .text-aboutus p {
+		width: 100%;
+		font-size: 20px;
+	}
+
+	.button1 {
+		font-size: 20px;
+	}
+
+	.ourvission .title1 h2 {
+		font-size: 40px;
+		padding-left: 10%;
+		padding-right: 60%;
+	}
+
+	.ourvission .box1 {
+		flex-direction: column;
+	}
+
+	.card {
+		width: 100%;
+		max-width: 450px;
+		height: 390px;
+	}
+
+	.ourmission .title2 h2 {
+		font-size: 40px;
+		padding-left: 10%;
+		padding-right: 60%;
+	}
+
+	.box2 {
+		flex-direction: column;
+	}
+
+	.card2 {
+		width: 100%;
+		max-width: 400px;
+		height: 400px;
+	}
+
+	footer {
+		height: auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+  
+	.socmed a {
+		height: 40px;
+		width: 40px;
+		margin: 10px;
+		font-size: 18px;
+	}
+	  
+	footer h2 {
+		font-size: 24px;
+	}
+	  
+	footer p {
+		font-size: 18px;
+	}
+  
+	.copyright {
+		  font-size: 14px;
+	}
+}
